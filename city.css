@@ -1,0 +1,47 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: antiquewhite;
+  padding: 20px;
+  font-size: xx-large;
+}
+
+h1 {
+  text-align: center;
+  color: darkslateblue;
+}
+
+.city-list {
+  list-style-type: upper-roman;
+  padding-left: 50px;
+  font-size: x-large;
+  background: linear-gradient(90deg, #e0c3fc, #8ec5fc);
+  border: 8px dashed #845ec2;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 40px auto;
+  box-shadow: 0 4px 10px rgba(50, 50, 50, 0.2);
+}
+
+.city-list li {
+  margin-bottom: 15px;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+  padding: 5px 0;
+  letter-spacing: 1px;
+}
+
+#favorite {
+  font-weight: bold;
+  color: crimson;
+  background-color: #0c0c0c;
+  padding: 15px 25px;
+  border-radius: 99px;
+  border: 3px solid #d7263d;
+  box-shadow: 0 2px 8px rgba(215, 38, 61, 0.2);
+}
+
+.city-list li:hover {
+  background: #d6fffc;
+  color: #1b4965;
+  cursor: pointer;
+}

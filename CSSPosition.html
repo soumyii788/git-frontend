@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            border: 8px solid black;
+            width: 400px;
+            height: auto;
+            margin: 50px auto;         
+            text-align: center;        
+            background-color: white;  
+        }
+        .heading-box {
+            background-color: orange;  
+            border: 3px solid black;
+            padding: 10px;
+            margin: 15px;
+        }
+        .heading-box h1 {
+            color: white;   
+            margin: 0;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .static {
+            border: 3px solid greenyellow;
+            margin: 15px;
+            background-color: white;   
+            padding: 10px;
+        }
+        .static p {
+            color: blue;    
+        }
+        .relative {
+            position: relative;
+            top: 10px;
+            left: 15px;
+            background-color: green;   
+            border: 3px solid rebeccapurple;
+            margin: 15px;
+            padding: 10px;
+        }
+        .relative p {
+            color: white;   /* changed to white */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="heading-box">
+            <h1>CSS Position Property</h1>
+        </div>
+
+        <div class="static">
+            <p>This is my static div</p>
+        </div>
+
+        <div class="relative">
+            <p>This is my relative div</p>
+        </div>
+    </main>
+</body>
+</html>
