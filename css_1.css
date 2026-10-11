@@ -1,31 +1,57 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f4f1ff 0%, #e0f7ff 100%);
     padding: 20px;
-    font-size: xx-large;
-  }
-  
-  h1 {
-    text-align: center;
-    color: darkslateblue;
-  }
-  
-  .movies-list {
-    list-style-type: square;
-    padding-left: 40px;
-    font-size: x-large;
-  }
-  
-  .movies-list li {
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  #favorite {
-    font-weight: bold;
-    color: crimson;
-    background-color: #383636;
-    padding: 5px 10px;
-    border-radius: 6px;
-  }
-  
+    font-size: 1.1rem;
+    min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #2a52be;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 30px;
+}
+
+.movies-list {
+  list-style-type: square;
+  padding-left: 40px;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(42, 82, 190, 0.15);
+}
+
+.movies-list li {
+  margin-bottom: 15px;
+  color: #333;
+  transition: all 0.3s ease;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.movies-list li:hover {
+  color: #2a52be;
+  font-weight: 500;
+  transform: translateX(8px);
+}
+
+#favorite {
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #7b2cbf, #d7263d);
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 2px solid #7b2cbf;
+  box-shadow: 0 4px 12px rgba(123, 44, 191, 0.3);
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+#favorite:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(123, 44, 191, 0.5);
+}
