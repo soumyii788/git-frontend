@@ -3,119 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frontend Practice Portal</title>
-  <style>
-    :root {
-      --bg1: #f4f1ff;
-      --bg2: #e0f7ff;
-      --primary: #2a52be;
-      --accent: #7b2cbf;
-      --text: #1f2a44;
-      --card: rgba(255, 255, 255, 0.8);
-      --shadow: rgba(42, 82, 190, 0.18);
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, var(--bg1), var(--bg2));
-      color: var(--text);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 40px 20px;
-    }
-
-    .container {
-      width: min(100%, 1000px);
-      background: var(--card);
-      border: 1px solid rgba(123, 44, 191, 0.15);
-      box-shadow: 0 20px 45px var(--shadow);
-      border-radius: 20px;
-      padding: 40px 30px;
-      backdrop-filter: blur(4px);
-    }
-
-    h1 {
-      margin: 0 0 10px;
-      text-align: center;
-      font-size: clamp(2rem, 4vw, 3rem);
-      color: var(--primary);
-    }
-
-    .subtitle {
-      text-align: center;
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-      color: #475569;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      display: block;
-      text-decoration: none;
-      color: inherit;
-      background: white;
-      border: 2px solid rgba(42, 82, 190, 0.1);
-      border-radius: 16px;
-      padding: 20px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(123, 44, 191, 0.4);
-      box-shadow: 0 16px 30px rgba(42, 82, 190, 0.12);
-    }
-
-    .card h2 {
-      margin: 0 0 10px;
-      color: var(--accent);
-      font-size: 1.25rem;
-    }
-
-    .card p {
-      margin: 0;
-      color: #334155;
-      line-height: 1.5;
-    }
-  </style>
+  <meta name="description" content="Frontend practice portfolio by Soumya Shukla - HTML5 and CSS3 projects" />
+  <title>Soumya Shukla - Frontend Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
 </head>
 <body>
+  <div class="stars"></div>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Frontend Portfolio</h1>
+      <p class="tagline">HTML5 & CSS3 Practice Collection</p>
+    </div>
+  </header>
+
   <main class="container">
-    <h1>Frontend Practice Portal</h1>
-    <p class="subtitle">Week 2 HTML and CSS assignments</p>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Welcome!</h2>
+        <p>A curated collection of modern web development projects showcasing HTML5 and CSS3 techniques.</p>
+      </div>
+    </section>
 
-    <section class="grid">
-      <a class="card" href="Htmlindex.html">
-        <h2>About Me</h2>
-        <p>Personal profile page with styled content and links.</p>
-      </a>
+    <section class="projects-grid">
+      <article class="project-card">
+        <div class="card-icon">👤</div>
+        <h3>About Me</h3>
+        <p>Personal profile page showcasing CSS pseudo-elements, attribute selectors, and modern badge styling.</p>
+        <a href="Htmlindex.html" class="btn btn-primary">View Project →</a>
+      </article>
 
-      <a class="card" href="city.html">
-        <h2>Favorite Cities</h2>
-        <p>Ordered list styling, gradients, hover effects, and card layout.</p>
-      </a>
+      <article class="project-card">
+        <div class="card-icon">🌍</div>
+        <h3>Favorite Cities</h3>
+        <p>Ordered list with Roman numerals, gradient backgrounds, smooth hover effects, and card shadows.</p>
+        <a href="city.html" class="btn btn-primary">View Project →</a>
+      </article>
 
-      <a class="card" href="Html_1.html">
-        <h2>Favorite Movies</h2>
-        <p>Movie list with custom bullets and highlighted favorite item.</p>
-      </a>
+      <article class="project-card">
+        <div class="card-icon">🎬</div>
+        <h3>Favorite Movies</h3>
+        <p>Unordered list with custom square bullets and ID-based highlight badges with animations.</p>
+        <a href="Html_1.html" class="btn btn-primary">View Project →</a>
+      </article>
 
-      <a class="card" href="CSSPosition.html">
-        <h2>CSS Position</h2>
-        <p>Demonstration of static and relative positioning in CSS.</p>
-      </a>
+      <article class="project-card">
+        <div class="card-icon">📐</div>
+        <h3>CSS Position Guide</h3>
+        <p>Visual demonstration comparing static vs relative positioning in the CSS box model.</p>
+        <a href="CSSPosition.html" class="btn btn-primary">View Project →</a>
+      </article>
+    </section>
+
+    <section class="tech-stack">
+      <h2>Technologies Used</h2>
+      <div class="tech-items">
+        <div class="tech-item">
+          <span class="tech-badge">HTML5</span>
+        </div>
+        <div class="tech-item">
+          <span class="tech-badge">CSS3</span>
+        </div>
+        <div class="tech-item">
+          <span class="tech-badge">Responsive Design</span>
+        </div>
+        <div class="tech-item">
+          <span class="tech-badge">Modern Web Standards</span>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Soumya Shukla. All rights reserved.</p>
+      <p><a href="https://github.com/soumyii788" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile →</a></p>
+    </div>
+  </footer>
 </body>
 </html>

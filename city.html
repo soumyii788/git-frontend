@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="city.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="cities.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My favorite cities - featuring gradient styling and hover animations">
     <title>My Favorite Cities</title>
 </head>
 <body>
-    <h1>My Favorite Cities</h1>
-    <ol class="city-list">
-      <li>New York</li>
-      <li>London</li>
-      <li id="favorite">Tokyo</li>
-      <li>Delhi</li>
-      <li>Bengaluru</li>
-    </ol>
+    <header class="subpage-header">
+        <div class="container">
+            <a href="index.html" class="back-nav">← Back Home</a>
+            <h1>My Favorite Cities</h1>
+            <p>Exploring the world's most inspiring places</p>
+        </div>
+    </header>
+
+    <main class="container cities-container">
+        <section class="cities-intro">
+            <div class="intro-text">
+                <p>These are some of the most amazing cities I'd love to explore or have explored. Each one has its own unique charm and cultural richness.</p>
+            </div>
+        </section>
+
+        <section class="cities-grid">
+            <ol class="city-list">
+                <li class="city-item">
+                    <div class="city-number">1</div>
+                    <div class="city-content">
+                        <h3>New York</h3>
+                        <p class="city-desc">The city that never sleeps</p>
+                    </div>
+                </li>
+                <li class="city-item">
+                    <div class="city-number">2</div>
+                    <div class="city-content">
+                        <h3>London</h3>
+                        <p class="city-desc">Rich history and culture</p>
+                    </div>
+                </li>
+                <li class="city-item favorite">
+                    <div class="city-number">3</div>
+                    <div class="city-content">
+                        <h3>Tokyo</h3>
+                        <p class="city-desc">Modern meets traditional</p>
+                    </div>
+                </li>
+                <li class="city-item">
+                    <div class="city-number">4</div>
+                    <div class="city-content">
+                        <h3>Delhi</h3>
+                        <p class="city-desc">Ancient heritage</p>
+                    </div>
+                </li>
+                <li class="city-item">
+                    <div class="city-number">5</div>
+                    <div class="city-content">
+                        <h3>Bengaluru</h3>
+                        <p class="city-desc">Tech hub of India</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Soumya Shukla. All rights reserved.</p>
+            <p><a href="https://github.com/soumyii788" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile →</a></p>
+        </div>
+    </footer>
 </body>
 </html>

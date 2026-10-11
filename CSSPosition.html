@@ -3,69 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Position Property - Static vs Relative positioning demo">
     <title>CSS Position Property</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        main {
-            border: 8px solid black;
-            width: 400px;
-            height: auto;
-            margin: 50px auto;         
-            text-align: center;        
-            background-color: white;  
-        }
-        .heading-box {
-            background-color: orange;  
-            border: 3px solid black;
-            padding: 10px;
-            margin: 15px;
-        }
-        .heading-box h1 {
-            color: white;   
-            margin: 0;
-        }
-        p {
-            margin: 10px 0;
-        }
-        .static {
-            border: 3px solid greenyellow;
-            margin: 15px;
-            background-color: white;   
-            padding: 10px;
-        }
-        .static p {
-            color: blue;    
-        }
-        .relative {
-            position: relative;
-            top: 10px;
-            left: 15px;
-            background-color: green;   
-            border: 3px solid rebeccapurple;
-            margin: 15px;
-            padding: 10px;
-        }
-        .relative p {
-            color: white;   /* changed to white */
-        }
-    </style>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="position.css">
 </head>
 <body>
-    <main>
-        <div class="heading-box">
+    <header class="subpage-header">
+        <div class="container">
+            <a href="index.html" class="back-nav">← Back Home</a>
             <h1>CSS Position Property</h1>
+            <p>Understanding Static vs Relative Positioning</p>
+        </div>
+    </header>
+
+    <main class="container position-container">
+        <section class="position-intro">
+            <div class="intro-text">
+                <h2>What is CSS Positioning?</h2>
+                <p>The CSS position property sets how an element is positioned in the document. It can be static, relative, absolute, fixed, or sticky. Below, we demonstrate the differences between static and relative positioning.</p>
+            </div>
+        </section>
+
+        <div class="position-demo">
+            <div class="demo-section">
+                <div class="demo-title">
+                    <span class="demo-badge">Static</span>
+                    <h3>Static Positioning (Default)</h3>
+                </div>
+                <p class="demo-description">Elements with position: static are not affected by top, bottom, left, or right properties. They flow naturally in the document.</p>
+                <div class="demo-box static-demo">
+                    <div class="position-box static-box">
+                        <p>I am a static box</p>
+                        <span class="position-label">position: static</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-section">
+                <div class="demo-title">
+                    <span class="demo-badge">Relative</span>
+                    <h3>Relative Positioning</h3>
+                </div>
+                <p class="demo-description">Elements with position: relative are positioned relative to their normal position. The offset is applied but the element still occupies its normal space.</p>
+                <div class="demo-box relative-demo">
+                    <div class="position-box relative-box">
+                        <p>I am a relative box</p>
+                        <span class="position-label">position: relative;<br>top: 20px; left: 30px;</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="static">
-            <p>This is my static div</p>
-        </div>
-
-        <div class="relative">
-            <p>This is my relative div</p>
-        </div>
+        <section class="position-comparison">
+            <h2>Key Differences</h2>
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <h4>Static</h4>
+                    <ul>
+                        <li>✓ Default positioning</li>
+                        <li>✓ Follows document flow</li>
+                        <li>✗ No offset properties</li>
+                        <li>✓ Simplest layout</li>
+                    </ul>
+                </div>
+                <div class="comparison-card">
+                    <h4>Relative</h4>
+                    <ul>
+                        <li>✓ Positioned relative to normal</li>
+                        <li>✓ Accepts offset properties</li>
+                        <li>✓ Still takes up space</li>
+                        <li>✓ Useful for fine-tuning</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Soumya Shukla. All rights reserved.</p>
+            <p><a href="https://github.com/soumyii788" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile →</a></p>
+        </div>
+    </footer>
 </body>
 </html>

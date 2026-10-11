@@ -3,34 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favorite Movies</title>
-    <link rel="stylesheet" href="css_1.css">
-    <style>
-        .back-link {
-            display: inline-block;
-            margin: 20px auto;
-            padding: 10px 15px;
-            background-color: #2a52be;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .back-link:hover {
-            background-color: #7b2cbf;
-        }
-    </style>
+    <meta name="description" content="My favorite movies - featuring gradient styling and custom bullets">
+    <title>My Favorite Movies</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="movies.css">
 </head>
 <body>
-  <a href="index.html" class="back-link">← Back to Home</a>
-  <h1>My Favorite Movies</h1>
-  <ul class="movies-list">
-    <li>Inception</li>
-    <li>Interstellar</li>
-    <li id="favorite">The Dark Knight</li>
-    <li>Avengers: Endgame</li>
-    <li>Spider-Man: No Way Home</li>
-  </ul>
+    <header class="subpage-header">
+        <div class="container">
+            <a href="index.html" class="back-nav">← Back Home</a>
+            <h1>My Favorite Movies</h1>
+            <p>Films that inspire and entertain</p>
+        </div>
+    </header>
+
+    <main class="container movies-container">
+        <section class="movies-intro">
+            <div class="intro-text">
+                <p>These are some of my all-time favorite movies that showcase incredible storytelling, cinematography, and performances.</p>
+            </div>
+        </section>
+
+        <section class="movies-grid">
+            <ul class="movies-list">
+                <li class="movie-item">
+                    <span class="movie-icon">🎬</span>
+                    <div class="movie-content">
+                        <h3>Inception</h3>
+                        <p class="movie-desc">A mind-bending masterpiece by Christopher Nolan</p>
+                    </div>
+                </li>
+                <li class="movie-item">
+                    <span class="movie-icon">🚀</span>
+                    <div class="movie-content">
+                        <h3>Interstellar</h3>
+                        <p class="movie-desc">Epic journey through space and time</p>
+                    </div>
+                </li>
+                <li class="movie-item favorite">
+                    <span class="movie-icon">🦇</span>
+                    <div class="movie-content">
+                        <h3>The Dark Knight</h3>
+                        <p class="movie-desc">The greatest superhero film ever made</p>
+                    </div>
+                </li>
+                <li class="movie-item">
+                    <span class="movie-icon">⚡</span>
+                    <div class="movie-content">
+                        <h3>Avengers: Endgame</h3>
+                        <p class="movie-desc">An epic conclusion to the Infinity Saga</p>
+                    </div>
+                </li>
+                <li class="movie-item">
+                    <span class="movie-icon">🕷️</span>
+                    <div class="movie-content">
+                        <h3>Spider-Man: No Way Home</h3>
+                        <p class="movie-desc">A multiverse adventure like no other</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Soumya Shukla. All rights reserved.</p>
+            <p><a href="https://github.com/soumyii788" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile →</a></p>
+        </div>
+    </footer>
 </body>
 </html>
