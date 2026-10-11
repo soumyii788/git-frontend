@@ -3,81 +3,216 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Frontend practice portfolio by Soumya Shukla - HTML5 and CSS3 projects" />
-  <title>Soumya Shukla - Frontend Portfolio</title>
-  <link rel="stylesheet" href="portfolio.css" />
+  <meta name="description" content="Soumya Shukla - Frontend Developer Portfolio" />
+  <title>Soumya Shukla | Frontend Developer</title>
+  <link rel="stylesheet" href="premium.css" />
+  <link rel="stylesheet" href="dark-theme.css" />
 </head>
 <body>
-  <div class="stars"></div>
-  <header class="header">
+  <div class="theme-toggle" id="themeToggle">
+    <input type="checkbox" id="darkModeCheckbox" class="toggle-checkbox">
+    <label for="darkModeCheckbox" class="toggle-label">
+      <span class="toggle-sun">☀️</span>
+      <span class="toggle-moon">🌙</span>
+    </label>
+  </div>
+
+  <div class="animated-background">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+  </div>
+
+  <header class="header" data-aos="fade-down">
     <div class="container">
-      <h1 class="logo">Frontend Portfolio</h1>
-      <p class="tagline">HTML5 & CSS3 Practice Collection</p>
+      <div class="header-content">
+        <div class="logo-section">
+          <div class="logo-circle">SS</div>
+          <div>
+            <h1 class="logo-text">Soumya Shukla</h1>
+            <p class="subtitle">Frontend Developer & Web Designer</p>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero">
+    <section class="hero" data-aos="fade-up">
       <div class="hero-content">
-        <h2>Welcome!</h2>
-        <p>A curated collection of modern web development projects showcasing HTML5 and CSS3 techniques.</p>
+        <div class="hero-text">
+          <h2 class="hero-title">Welcome to My Portfolio</h2>
+          <p class="hero-description">Crafting modern, responsive web experiences with HTML5, CSS3, and JavaScript. Explore my collection of frontend projects showcasing modern design patterns and interactive techniques.</p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Responsive</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Learning</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="floating-card card-1" data-aos="zoom-in" data-aos-delay="200">
+            <span>HTML5</span>
+          </div>
+          <div class="floating-card card-2" data-aos="zoom-in" data-aos-delay="400">
+            <span>CSS3</span>
+          </div>
+          <div class="floating-card card-3" data-aos="zoom-in" data-aos-delay="600">
+            <span>Design</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="projects-grid">
-      <article class="project-card">
-        <div class="card-icon">👤</div>
-        <h3>About Me</h3>
-        <p>Personal profile page showcasing CSS pseudo-elements, attribute selectors, and modern badge styling.</p>
-        <a href="Htmlindex.html" class="btn btn-primary">View Project →</a>
-      </article>
+    <section class="projects-section" data-aos="fade-up" data-aos-delay="300">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <div class="header-line"></div>
+      </div>
 
-      <article class="project-card">
-        <div class="card-icon">🌍</div>
-        <h3>Favorite Cities</h3>
-        <p>Ordered list with Roman numerals, gradient backgrounds, smooth hover effects, and card shadows.</p>
-        <a href="city.html" class="btn btn-primary">View Project →</a>
-      </article>
+      <div class="projects-grid">
+        <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-header">
+            <div class="icon-box">👤</div>
+            <h3>About Me</h3>
+          </div>
+          <p class="card-description">Personal profile page showcasing CSS pseudo-elements, modern badge styling, and professional presentation.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">Design</span>
+          </div>
+          <a href="Htmlindex.html" class="btn btn-primary btn-modern">Explore →</a>
+        </article>
 
-      <article class="project-card">
-        <div class="card-icon">🎬</div>
-        <h3>Favorite Movies</h3>
-        <p>Unordered list with custom square bullets and ID-based highlight badges with animations.</p>
-        <a href="Html_1.html" class="btn btn-primary">View Project →</a>
-      </article>
+        <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-header">
+            <div class="icon-box">🌍</div>
+            <h3>Favorite Cities</h3>
+          </div>
+          <p class="card-description">Ordered list with gradient backgrounds, smooth hover animations, and shadow effects.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">CSS Gradients</span>
+            <span class="tech-tag">Animations</span>
+            <span class="tech-tag">Lists</span>
+          </div>
+          <a href="city.html" class="btn btn-primary btn-modern">Explore →</a>
+        </article>
 
-      <article class="project-card">
-        <div class="card-icon">📐</div>
-        <h3>CSS Position Guide</h3>
-        <p>Visual demonstration comparing static vs relative positioning in the CSS box model.</p>
-        <a href="CSSPosition.html" class="btn btn-primary">View Project →</a>
-      </article>
+        <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-header">
+            <div class="icon-box">🎬</div>
+            <h3>Favorite Movies</h3>
+          </div>
+          <p class="card-description">Custom-styled list with unique bullets and interactive highlight badges.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Custom Bullets</span>
+            <span class="tech-tag">Badges</span>
+            <span class="tech-tag">Styling</span>
+          </div>
+          <a href="Html_1.html" class="btn btn-primary btn-modern">Explore →</a>
+        </article>
+
+        <article class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="card-header">
+            <div class="icon-box">📍</div>
+            <h3>CSS Position Guide</h3>
+          </div>
+          <p class="card-description">Visual demonstration comparing static vs relative positioning in CSS box model.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">CSS Positioning</span>
+            <span class="tech-tag">Box Model</span>
+            <span class="tech-tag">Demo</span>
+          </div>
+          <a href="CSSPosition.html" class="btn btn-primary btn-modern">Explore →</a>
+        </article>
+      </div>
     </section>
 
-    <section class="tech-stack">
-      <h2>Technologies Used</h2>
-      <div class="tech-items">
-        <div class="tech-item">
-          <span class="tech-badge">HTML5</span>
+    <section class="skills-section" data-aos="fade-up" data-aos-delay="500">
+      <div class="section-header">
+        <h2>Skills & Technologies</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="flip-left">
+          <div class="skill-icon">🎨</div>
+          <h3>Frontend Design</h3>
+          <p>Creating beautiful, intuitive interfaces with modern CSS techniques and design principles.</p>
+          <ul class="skill-list">
+            <li>UI/UX Design</li>
+            <li>Responsive Layout</li>
+            <li>CSS Animations</li>
+          </ul>
         </div>
-        <div class="tech-item">
-          <span class="tech-badge">CSS3</span>
+
+        <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="skill-icon">⚡</div>
+          <h3>Web Performance</h3>
+          <p>Building fast, optimized websites that deliver excellent user experiences.</p>
+          <ul class="skill-list">
+            <li>Performance Optimization</li>
+            <li>Clean Code</li>
+            <li>Best Practices</li>
+          </ul>
         </div>
-        <div class="tech-item">
-          <span class="tech-badge">Responsive Design</span>
+
+        <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
+          <div class="skill-icon">🚀</div>
+          <h3>Modern Technologies</h3>
+          <p>Staying current with the latest web standards and development practices.</p>
+          <ul class="skill-list">
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+          </ul>
         </div>
-        <div class="tech-item">
-          <span class="tech-badge">Modern Web Standards</span>
-        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" data-aos="zoom-in">
+      <div class="cta-content">
+        <h2>Let's Create Something Amazing</h2>
+        <p>Interested in seeing more of my work? Connect with me on GitHub and explore my latest projects.</p>
+        <a href="https://github.com/soumyii788" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+          Visit My GitHub →
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2024 Soumya Shukla. All rights reserved.</p>
-      <p><a href="https://github.com/soumyii788" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile →</a></p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Soumya Shukla</h3>
+          <p>Frontend Developer & Designer</p>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <a href="https://github.com/soumyii788" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        </div>
+        <div class="footer-section">
+          <h4>Projects</h4>
+          <a href="#" class="footer-link">Portfolio</a>
+          <a href="#" class="footer-link">About</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Soumya Shukla. Designed and built with ❤️</p>
+      </div>
     </div>
   </footer>
+
+  <script src="animations.js"></script>
 </body>
 </html>

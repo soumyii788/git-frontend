@@ -1,0 +1,116 @@
+/* Dark Mode Theme */
+#darkModeCheckbox:checked ~ * {
+  color-scheme: dark;
+}
+
+#darkModeCheckbox:checked {
+  /* This selector prepares dark mode activation */
+}
+
+body.dark-mode {
+  --bg-light: #0f1419;
+  --bg-lighter: #1a1f2e;
+  --text-dark: #e5e7eb;
+  --text-light: #b0b8c8;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 32px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(135deg, #0f1419 0%, #1a2a3a 100%);
+}
+
+body.dark-mode .project-card,
+body.dark-mode .skill-card,
+body.dark-mode .intro-card,
+body.dark-mode .intro-text,
+body.dark-mode .about-card,
+body.dark-mode .demo-section,
+body.dark-mode .comparison-card,
+body.dark-mode .cta-card {
+  background: rgba(26, 31, 46, 0.8);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .project-card:hover,
+body.dark-mode .skill-card:hover {
+  box-shadow: var(--shadow-xl);
+}
+
+body.dark-mode .tech-tag {
+  background: rgba(42, 82, 190, 0.15);
+  border-color: rgba(123, 44, 191, 0.4);
+}
+
+body.dark-mode .project-card:hover .tech-tag,
+body.dark-mode .skill-card:hover .tech-tag {
+  background: linear-gradient(135deg, #2a52be, #7b2cbf);
+  border-color: var(--secondary);
+}
+
+body.dark-mode .btn-primary {
+  box-shadow: 0 0 20px rgba(123, 44, 191, 0.4);
+}
+
+body.dark-mode .btn-primary:hover {
+  box-shadow: 0 0 30px rgba(123, 44, 191, 0.6);
+}
+
+body.dark-mode .toggle-label {
+  background: rgba(26, 31, 46, 0.9);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .demo-box {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .position-box {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .city-item,
+body.dark-mode .movie-item {
+  background: rgba(26, 31, 46, 0.8);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .city-item:hover,
+body.dark-mode .movie-item:hover {
+  border-color: #2a52be;
+}
+
+body.dark-mode .city-item.favorite,
+body.dark-mode .movie-item.favorite {
+  background: rgba(215, 38, 61, 0.1);
+  border-color: #d7263d;
+}
+
+body.dark-mode .approach-item {
+  background: linear-gradient(135deg, #2a52be, #7b2cbf);
+  box-shadow: 0 4px 12px rgba(123, 44, 191, 0.3);
+}
+
+body.dark-mode .skill-list li::before {
+  color: #7b2cbf;
+}
+
+body.dark-mode .footer-link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Smooth transition for theme toggle */
+body,
+body.dark-mode {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ensure text is visible in both modes */
+body.dark-mode a {
+  color: #5ba3ff;
+}
+
+body.dark-mode a:hover {
+  color: #7b2cbf;
+}
