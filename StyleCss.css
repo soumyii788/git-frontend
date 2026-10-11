@@ -1,63 +1,93 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    padding: 50px;
-    background-color: rgb(172, 218, 120);
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #f4f1ff 0%, #e0f7ff 100%);
+    min-height: 100vh;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: clamp(2rem, 5vw, 3rem);
     font-weight: bold;
     color: #2a52be;
     margin-bottom: 40px;
 }
 
 .content {
-    font-size: 22px;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(42, 82, 190, 0.1);
 }
+
 .content::first-line {
     color: #2a52be;
     font-weight: bold;
+    font-size: 1.3rem;
 }
+
 .content .highlight-w {
-    font-size: 45px;
+    font-size: 2.5rem;
     font-weight: bold;
     color: rgb(28, 201, 28);
+    margin-right: 5px;
 }
 
 .highlight-box {
-    background: rgba(179, 245, 223, 0.9);
-    padding: 5px 10px;
-    border-radius: 5px;
+    background: linear-gradient(135deg, rgba(179, 245, 223, 0.9), rgba(173, 216, 230, 0.9));
+    padding: 8px 15px;
+    border-radius: 8px;
     font-weight: bold;
     display: inline-block;
-    color: black;
+    color: #1f2a44;
+    border-left: 4px solid #2a52be;
+    transition: transform 0.2s ease;
+}
+
+.highlight-box:hover {
+    transform: translateX(5px);
 }
 
 .content span {
-    color: black;
+    color: #1f2a44;
 }
+
 .more-info {
-    margin-top: 25px;
-    font-size: 18px;
+    margin-top: 40px;
+    font-size: 1.1rem;
     color: #555;
     font-style: italic;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(42, 82, 190, 0.1);
 }
 
 .more-info a {
     color: #2a52be;
-    text-decoration: underline;
+    text-decoration: none;
     font-style: normal;
+    font-weight: bold;
+    border-bottom: 2px solid #2a52be;
+    transition: all 0.3s ease;
+    padding-bottom: 2px;
 }
+
 .more-info a:hover,
 .external-link:hover {
-    color: #f00;
-    text-decoration: none;
+    color: #7b2cbf;
+    border-bottom-color: #7b2cbf;
 }
 
 a[target="_blank"] {
     background: rgba(255, 220, 180, 0.5);
-    padding: 3px 7px;
+    padding: 5px 10px;
     border-radius: 4px;
 }
